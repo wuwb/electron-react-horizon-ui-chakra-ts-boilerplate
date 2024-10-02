@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2022",
+    "module": "CommonJS",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "outDir": ".erb/dll",
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": false,
+    "downlevelIteration": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/": [
+        "./src/main/*",
+        "./src/renderer/*"
+      ],
+      "@/main": [
+        "./src/main/*",
+      ],
+      "@/renderer": [
+        "./src/renderer/*"
+      ]
+    },
+  },
+  "include": [
+    "./src"
+  ], 
+  "exclude": ["test", "release/build", "release/app/dist", ".erb/dll"]
+}
